@@ -1,0 +1,7 @@
+{% block content %}
+    <h1>Delete Users</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_ul }}
+        <button type="submit" class="save btn btn-default">Delete</button>
+    </form>
+{% endblock %}
